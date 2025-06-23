@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Counter</title>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Продукт 1 -->
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Продукт 1" />
+      <div class="controls">
+        <button onclick="deleting1()">-</button>
+        <input type="number" id="count1" value="0" readonly />
+        <button onclick="add1()">+</button>
+      </div>
+      <input type="hidden" id="product1" value="Product 1" />
+    </div>
+
+    <!-- Продуктt 2 -->
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Продукт 2" />
+      <div class="controls">
+        <button onclick="deleting2()">-</button>
+        <input type="number" id="count2" value="0" readonly />
+        <button onclick="add2()">+</button>
+      </div>
+      <input type="hidden" id="product2" value="Product 2" />
+    </div>
+
+    <!-- Footer -->
+
+    <div class="page-bootom">
+      <div>Total: <span id="total">0</span></div>
+      <button onclick="submit()">Submit</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
