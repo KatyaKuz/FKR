@@ -75,8 +75,8 @@ function submit() {
   .then(response => response.json())
   .then(data => {
     if (data.response === 'ОК') {
-      // Виводимо total після тексту "Total:"
-      totalSpan.textContent = data.total;
+      // Виведе total після тексту "Total:" + тільки при OК
+      totalSpan.textContent = data.total; // через updateTotal()
     } else {
       alert(data.response);
     }
